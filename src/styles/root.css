@@ -201,6 +201,14 @@
 .imagine-border {
   border: 1px dashed black;
 }
+/*square soft edges*/
+.soft-edges-sqaure {
+  border-radius: 15%;
+}
+/*rectangular soft-edges*/
+.soft-edges {
+  border-radius: 8% / 20%;
+}
 .rounded {
   border-radius: 30%;
 }

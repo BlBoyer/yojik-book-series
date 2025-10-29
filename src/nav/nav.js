@@ -1,5 +1,6 @@
 //this component will be a modal to easily select which component to render. Instead of a typical bar navigation, it will use icons and selectable buttons
 
+import './nav.css';
 import Books from '../books/books';
 import Gallery from '../gallery/gallery';
 import Home from '../home/home';
@@ -8,8 +9,10 @@ import Story from '../story/story';
 //component should output component name to app container, lazy load the component by name
 export default function Nav({ route }) {
   return (
-    <div className='grid-areas depth-2 justify-c grid-gap-vm view-width vw-80 view-height vh-35 m-l p-m bg-white border-2 solid-border border-black shaded-black basic-txt-shade'>
-      <button onClick={() => route(() => Home)} className='area1 button-glow bg-brown-3'>
+    <div className='nav grid-areas depth-2 justify-c grid-gap-vm view-width vw-60 view-height vh-35 min-height fit m-l p-m bg-translucent border-3 solid-border border-black shaded-black basic-txt-shade'>
+      <button
+        onClick={() => route(() => Home)}
+        className='area1 button-glow bg-brown-3 soft-edges row txt-m align-c justify-b'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           width='24'
@@ -28,7 +31,9 @@ export default function Nav({ route }) {
         </svg>
         Home
       </button>
-      <button onClick={() => route(() => Books)} className='area2 button-glow bg-brown-3'>
+      <button
+        onClick={() => route(() => Books)}
+        className='area2 button-glow bg-brown-3 soft-edges row txt-m align-c justify-b'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           width='24'
@@ -49,7 +54,9 @@ export default function Nav({ route }) {
         </svg>
         Books
       </button>
-      <button onClick={() => route(() => Story)} className='area3 button-glow bg-brown-3'>
+      <button
+        onClick={() => route(() => Story)}
+        className='area3 button-glow bg-brown-3 soft-edges row txt-m align-c justify-b'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           width='24'
@@ -67,7 +74,9 @@ export default function Nav({ route }) {
         </svg>
         Story
       </button>
-      <button onClick={() => route(() => Gallery)} className='area4 button-glow bg-brown-3'>
+      <button
+        onClick={() => route(() => Gallery)}
+        className='area4 button-glow bg-brown-3 soft-edges row txt-m align-c justify-b'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
           width='24'
