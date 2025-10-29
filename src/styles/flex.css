@@ -1,0 +1,44 @@
+/*spacing*/
+.justify-c {
+  justify-content: center;
+}
+.justify-s {
+  justify-content: start;
+}
+.justify-e {
+  justify-content: end;
+}
+.justify-a {
+  justify-content: space-around;
+}
+.justify-b {
+  justify-content: space-between;
+}
+.justify-e {
+  justify-content: space-evenly;
+}
+/*alignment*/
+.align-c {
+  align-items: center;
+}
+.align-s {
+  align-items: flex-start;
+}
+.align-e {
+  align-items: flex-end;
+}
+.align-stretch {
+  align-items: stretch;
+}
+.align-self-s {
+  align-self: flex-start;
+}
+.align-self-e {
+  align-self: flex-end;
+}
+.align-self-c {
+  align-self: center;
+}
+.align-self-str {
+  align-self: stretch;
+}
