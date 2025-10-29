@@ -8,7 +8,7 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
 
   //close navigation modal when new route selected
-  useEffect(() => setIsOpen(false), [setRoute]);
+  useEffect(() => setIsOpen(false), [Route]);
 
   return [
     <button
