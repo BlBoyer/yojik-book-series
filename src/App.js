@@ -10,10 +10,19 @@ function App() {
   //close navigation modal when new route selected
   useEffect(() => setIsOpen(false), [Route]);
 
+  document.addEventListener('keydown', function (event) {
+    // Modern browsers: event.key === 'Escape'
+    // Older browsers: event.keyCode === 27
+    if (isOpen && (event.key === 'Escape' || event.key === 'Esc' || event.keyCode === 27)) {
+      event.preventDefault(); // Prevent default behavior if needed
+      setIsOpen(false);
+    }
+  });
+
   return [
     <button
       key={0}
-      style={{ position: 'absolute', borderRadius: '15%' }}
+      style={{ position: 'fixed', borderRadius: '15%', top: '5px', left: '5px' }}
       className='button-glow bg-brown-3 txt-xl border-3'
       onClick={() => setIsOpen(!isOpen)}>
       =
