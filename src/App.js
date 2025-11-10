@@ -29,11 +29,11 @@ function App() {
     </button>,
     <div key={1} className='row justify-c'>
       {/* If this is a row it will be an issue for the button */}
-      <Route />
+      <Route nav={setRoute} />
     </div>,
     <div key={2} className='row justify-c align-c full-width full-height'>
       <IfContainer condition={isOpen}>
-        <Nav route={setRoute} />
+        <Nav nav={setRoute} />
       </IfContainer>
     </div>,
   ];

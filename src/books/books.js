@@ -59,7 +59,7 @@ export default function Books() {
           <text className='book-viewer'>&#10148;</text>
         </button>
       </div>
-      <div className='books col ml-vxs txt-m mb-s'>
+      <div className='books col txt-m mb-s'>
         <a
           href={bookEntries[bookIndex][1]}
           className='p-xs button-glow soft-edges bg-white solid-border border-2 border-black'>

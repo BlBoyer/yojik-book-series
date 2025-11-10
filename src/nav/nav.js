@@ -4,11 +4,11 @@ import Books from '../books/books';
 import Home from '../home/home';
 
 //component should output component name to app container, lazy load the component by name
-export default function Nav({ route }) {
+export default function Nav({ nav }) {
   return (
     <div className='nav collapse row justify-a align-c view-width vw-40 view-height vh-35 min-height min-width fit m-l p-xs bg-brown-3 border-3 solid-border border-black shaded-black basic-txt-shade'>
       <div
-        onClick={() => route(() => Home)}
+        onClick={() => nav(() => Home)}
         title='Home'
         className='nav-tab row justify-c align-c rounded-link button-glow'>
         <svg
@@ -31,7 +31,7 @@ export default function Nav({ route }) {
       </div>
       <hr></hr>
       <div
-        onClick={() => route(() => Books)}
+        onClick={() => nav(() => Books)}
         title='Books'
         className='nav-tab row justify-c align-c rounded-link button-glow'>
         <svg
@@ -55,7 +55,7 @@ export default function Nav({ route }) {
         {/* Books */}
       </div>
       {/* <button
-        onClick={() => route(() => Story)}
+        onClick={() => nav(() => Story)}
         className='button-glow bg-brown-3 soft-edges row txt-m align-c justify-b'>
         <svg
           xmlns='http://www.w3.org/2000/svg'
