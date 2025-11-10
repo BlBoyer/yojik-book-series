@@ -22,7 +22,7 @@ function App() {
       {/* If this is a row it will be an issue for the button */}
       <Route />
     </div>,
-    <div key={2} className='row justify-c full-width full-height'>
+    <div key={2} className='row justify-c align-c full-width full-height'>
       <IfContainer condition={isOpen}>
         <Nav route={setRoute} />
       </IfContainer>

@@ -1,0 +1,30 @@
+button.book-viewer {
+  margin-right: -0.25em;
+  margin-left: -0.25em;
+}
+button.book-viewer:hover {
+  color: var(--gray-1);
+}
+/*change display*/
+text.book-viewer {
+  display: inline-block;
+}
+@media (width < 768px) {
+  .main {
+    margin-top: 1em;
+  }
+  img.book-viewer {
+    min-width: 40vw;
+  }
+  button.book-viewer {
+    font-size: var(--text-lg);
+  }
+}
+@media (width < 540px) {
+  img.book-viewer {
+    min-width: 45vw;
+  }
+  button.book-viewer {
+    font-size: var(--text-m);
+  }
+}
