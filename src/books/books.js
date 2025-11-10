@@ -38,23 +38,31 @@ export default function Books() {
   }
 
   return (
-    <div className='col align-c reg-font'>
-      <h2 className='title-font'>Books</h2>
-      <div className='book-viewer row justify-c view-width vw-50 mb-l bg-gray-4 faded-edge'>
+    <div className='col view-width vw-100 align-c reg-font bg-brown-3'>
+      <h1 className='title-font font-faded-outline white mb-m txt-align-c'>Books</h1>
+      <div className='book-viewer main row justify-c mb-l bg-gray-3 faded-edge'>
         <button
           onClick={() => changeBook('left')}
           className='book-viewer my-a txt-xl bg-translucent gray-4 button-glow'>
           <text className='book-viewer flip-x txt-align-r'>&#10148;</text>
         </button>
-        <img src={bookImages[bookIndex].src} alt='Book cover' className='book-viewer view-width vw-30 auto-height' />
+        <a href={bookEntries[bookIndex][1]}>
+          <img
+            src={bookImages[bookIndex].src}
+            alt='Book cover'
+            className='book-viewer view-height vh-75 view-width vw-65'
+          />
+        </a>
         <button
           onClick={() => changeBook('right')}
           className='book-viewer my-a txt-xl bg-translucent gray-4 button-glow'>
           <text className='book-viewer'>&#10148;</text>
         </button>
       </div>
-      <div className='books col ml-vxs'>
-        <a href={bookEntries[bookIndex][1]} className='button-glow'>
+      <div className='books col ml-vxs txt-m mb-s'>
+        <a
+          href={bookEntries[bookIndex][1]}
+          className='p-xs button-glow soft-edges bg-white solid-border border-2 border-black'>
           See on Amazon
         </a>
       </div>

@@ -13,7 +13,7 @@ function App() {
   document.addEventListener('keydown', function (event) {
     // Modern browsers: event.key === 'Escape'
     // Older browsers: event.keyCode === 27
-    if (isOpen && (event.key === 'Escape' || event.key === 'Esc' || event.keyCode === 27)) {
+    if (isOpen && (event.key === 'Escape' || event.key === 'Esc' || event.code === 27)) {
       event.preventDefault(); // Prevent default behavior if needed
       setIsOpen(false);
     }

@@ -9,6 +9,19 @@ button.book-viewer:hover {
 text.book-viewer {
   display: inline-block;
 }
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: var(--gray-2);
+}
+a::selection {
+  color: var(--red-2);
+}
+a:focus {
+  color: var(--blue-2);
+}
 @media (width < 768px) {
   .main {
     margin-top: 1em;
