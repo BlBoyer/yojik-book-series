@@ -202,7 +202,7 @@
   border: 1px dashed black;
 }
 /*square soft edges*/
-.soft-edges-sqaure {
+.soft-edges-square {
   border-radius: 15%;
 }
 /*rectangular soft-edges*/
@@ -322,5 +322,11 @@
 @media (width < 768px) {
   .collapse-stack.row {
     flex-direction: column;
+  }
+  @font-face {
+    font-family: 'DMSerif';
+    src: url('../fonts/DMSerifDisplay-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
   }
 }
