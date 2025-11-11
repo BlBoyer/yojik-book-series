@@ -198,11 +198,14 @@
 }
 
 /*borders*/
+.no-border {
+  border: none;
+}
 .imagine-border {
   border: 1px dashed black;
 }
 /*square soft edges*/
-.soft-edges-sqaure {
+.soft-edges-square {
   border-radius: 15%;
 }
 /*rectangular soft-edges*/
@@ -276,6 +279,9 @@
 .faded-edge.bg-gray-4 {
   box-shadow: 0px 0px 10px 20px var(--gray-4);
 }
+.faded-edge.bg-gray-3 {
+  box-shadow: 0px 0px 10px 20px var(--gray-3);
+}
 
 /*transformations*/
 .flip-x {
@@ -322,5 +328,11 @@
 @media (width < 768px) {
   .collapse-stack.row {
     flex-direction: column;
+  }
+  @font-face {
+    font-family: 'DMSerif';
+    src: url('../fonts/DMSerifDisplay-Regular.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
   }
 }

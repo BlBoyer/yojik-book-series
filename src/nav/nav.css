@@ -1,4 +1,39 @@
 .nav {
-  position: absolute;
-  top: 0px;
+  position: fixed;
+  top: 25%;
+}
+.nav-tab {
+  height: 100%;
+  width: 49%;
+}
+.rounded-link {
+  border-radius: 7% / 7%;
+}
+.button-glow:hover {
+  background-color: var(--white);
+  opacity: 0.7;
+}
+hr {
+  height: 100%;
+  border: none;
+  border-color: var(--gray-5);
+  box-shadow: 0px 0px 2px 1px;
+  color: var(--gray-5);
+}
+
+@media (width < 540px) {
+  .nav.collapse.row {
+    flex-direction: column;
+  }
+  .nav-tab {
+    height: 49%;
+    width: 100%;
+  }
+  .rounded-link {
+    border-radius: 12% / 20%;
+  }
+  hr {
+    height: unset;
+    width: 100%;
+  }
 }

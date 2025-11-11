@@ -8,23 +8,32 @@ function App() {
   const [isOpen, setIsOpen] = useState(false);
 
   //close navigation modal when new route selected
-  useEffect(() => setIsOpen(false), [setRoute]);
+  useEffect(() => setIsOpen(false), [Route]);
+
+  document.addEventListener('keydown', function (event) {
+    // Modern browsers: event.key === 'Escape'
+    // Older browsers: event.keyCode === 27
+    if (isOpen && (event.key === 'Escape' || event.key === 'Esc' || event.code === 27)) {
+      event.preventDefault(); // Prevent default behavior if needed
+      setIsOpen(false);
+    }
+  });
 
   return [
     <button
       key={0}
-      style={{ position: 'absolute', borderRadius: '15%' }}
+      style={{ position: 'fixed', borderRadius: '15%', top: '5px', left: '5px' }}
       className='button-glow bg-brown-3 txt-xl border-3'
       onClick={() => setIsOpen(!isOpen)}>
       =
     </button>,
     <div key={1} className='row justify-c'>
       {/* If this is a row it will be an issue for the button */}
-      <Route />
+      <Route nav={setRoute} />
     </div>,
-    <div key={2} className='row justify-c full-width full-height'>
+    <div key={2} className='row justify-c align-c full-width full-height'>
       <IfContainer condition={isOpen}>
-        <Nav route={setRoute} />
+        <Nav nav={setRoute} />
       </IfContainer>
     </div>,
   ];
