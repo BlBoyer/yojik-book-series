@@ -1,6 +1,5 @@
 {
   "name": "yojik-book-series",
-  "homepage": "https://blboyer.github.io/yojik-book-series/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
