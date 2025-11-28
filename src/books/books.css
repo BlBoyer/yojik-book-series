@@ -22,12 +22,18 @@ a::selection {
 a:focus {
   color: var(--blue-2);
 }
+@media (width > 768px) {
+  img.book-viewer {
+    /* width: 70vw; */
+    height: 70vh;
+  }
+}
 @media (width < 768px) {
   .main {
     margin-top: 1em;
   }
   img.book-viewer {
-    min-width: 40vw;
+    width: 60vw;
   }
   button.book-viewer {
     font-size: var(--text-lg);
@@ -35,7 +41,7 @@ a:focus {
 }
 @media (width < 540px) {
   img.book-viewer {
-    min-width: 45vw;
+    width: 40vh;
   }
   button.book-viewer {
     font-size: var(--text-m);
