@@ -38,7 +38,7 @@ export default function Books() {
   }
 
   return (
-    <div className='col view-width vw-100 align-c reg-font bg-brown-3'>
+    <div className='col view-width vw-100 view-height vh-100 min-height fit align-c reg-font bg-brown-3'>
       <h1 className='title-font font-faded-outline white mb-m txt-align-c'>Books</h1>
       <div className='book-viewer main row justify-c mb-l bg-gray-3 faded-edge'>
         <button
@@ -50,7 +50,7 @@ export default function Books() {
           <img
             src={bookImages[bookIndex].src}
             alt='Book cover'
-            className='book-viewer view-height vh-75 view-width vw-65'
+            className='book-viewer'
           />
         </a>
         <button
