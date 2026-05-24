@@ -213,7 +213,7 @@
   border-radius: 8% / 20%;
 }
 .rounded {
-  border-radius: 30%;
+  border-radius: 8px 8px;
 }
 .circular {
   border-radius: 50%;
