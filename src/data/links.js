@@ -8,4 +8,7 @@ export const booklinks = {
   7: 'https://www.amazon.com/dp/B0GQTK74C8',
   8: 'https://www.amazon.com/dp/B0GTLFT4HS',
   9: 'https://www.amazon.com/dp/B0GVZH78XW',
+  10: 'https://www.amazon.com/dp/B0HF9MW3XQ',
+  11: 'https://www.amazon.com/dp/B0HFN7C33L',
+  12: 'https://www.amazon.com/dp/B0HFT6CP5T',
 };

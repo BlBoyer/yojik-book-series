@@ -20,11 +20,17 @@ const cover8 = new Image();
 cover8.src = require('../img/cover8.jpg');
 const cover9 = new Image();
 cover9.src = require('../img/cover9.jpeg');
+const cover10 = new Image();
+cover10.src = require('../img/cover10.jpeg');
+const cover11 = new Image();
+cover11.src = require('../img/cover11.jpeg');
+const cover12 = new Image();
+cover12.src = require('../img/cover12.jpeg');
 
 export default function Books() {
   const [bookIndex, setBook] = useState(0);
   const bookEntries = Object.entries(books.booklinks);
-  const bookImages = [cover1, cover2, cover3, cover4, cover5, cover6, cover7, cover8, cover9];
+  const bookImages = [cover1, cover2, cover3, cover4, cover5, cover6, cover7, cover8, cover9, cover10, cover11, cover12];
 
   function changeBook(direction) {
     if (direction === 'right') {
